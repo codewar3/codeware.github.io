@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "front";
+    src: url("../front/front.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    font-family: "front", monospace;
+    color: white;
+    background-image: url("../img/Highway_20-12-25.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px #000;
+}
+
+.desc, .box {
+    background: rgba(0,0,0,.65);
+    padding: 25px 40px;
+    border-radius: 6px;
+    box-shadow: 0 0 15px #000;
+    max-width: 900px;
+    text-shadow: 2px 2px #000;
+}
+
+.links {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.back {
+    margin-top: 30px;
+}
+
+footer {
+    position: absolute;
+    bottom: 15px;
+    font-size: .8rem;
+    opacity: .75;
+}
+
+/* ===== COMANDOS ===== */
+
+.commands {
+    width: 100%;
+    text-align: left;
+}
+
+.command {
+    display: grid;
+    grid-template-columns: 260px auto;
+    gap: 15px;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.command:last-child {
+    border-bottom: none;
+}
+
+.cmd {
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: .95;
+}
+
+.cmd span {
+    opacity: .7;
+    font-weight: normal;
+}
